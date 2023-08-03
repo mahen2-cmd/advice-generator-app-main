@@ -61,10 +61,10 @@
 
             const adviceIdElement = document.getElementById('advice-id');
             let str = `ADVICE#${data.slip.id}`;
-            let spaced_str = str.split('').join('  ');
+            // let spaced_str = str.split('').join('     ');
 
-            console.log(spaced_str);
-            adviceIdElement.textContent = spaced_str;
+            console.log(str);
+            adviceIdElement.textContent = str;
           })
           .catch(error => console.error(error));
       }
