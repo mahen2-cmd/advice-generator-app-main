@@ -13,11 +13,42 @@ body {
     font-weight: 700;
 }
 
+.circle {
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-60%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
 
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.circle:hover {
+    cursor: pointer;
+    /* background-color: hsl(150, 100%, 66%); */
+    box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+    /* color: white; */
+}
+
+
+/* .circle svg {
+    max-width: 100%;
+    max-height: 100%;
+} */
 
 .container {
     width: 600px;
-    height: 400px;
+    height: 350px;
     background-color: hsl(217, 19%, 24%);
 
     border-radius: 20px;
@@ -33,9 +64,10 @@ body {
 .item-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
     margin: 40px;
+    align-items: center;
 
 }
 
